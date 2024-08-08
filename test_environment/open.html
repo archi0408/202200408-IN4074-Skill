@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PedalPulse - Database-Driven Bikes Platform</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f4f8; /* Light grayish-blue background */
+            color: #333;
+        }
+
+        header {
+            background-color: #004d40; /* Deep teal */
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav li {
+            margin: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 20px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #00796b; /* Slightly lighter teal */
+            color: #fff;
+            border-radius: 5px;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2em;
+        }
+
+        section {
+            background-color: #ffffff; /* White background for sections */
+            color: #333;
+            padding: 1em;
+            margin-bottom: 20px;
+            width: 100%;
+            max-width: 1200px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        #find-bike {
+            background-image: url('PP.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 400px; /* Adjust height as needed */
+            color: #fff; /* Ensure text is readable */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center; /* Center text horizontally */
+        }
+
+        #find-bike h2 {
+            background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for text readability */
+            padding: 20px;
+            border-radius: 5px;
+            font-size: 24px; /* Adjust font size as needed */
+            margin: 0; /* Remove default margin */
+        }
+
+        section img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        h1, h2 {
+            font-weight: bold;
+            margin-top: 0;
+            color: #004d40; /* Deep teal */
+        }
+
+        p {
+            color: #555;
+        }
+
+        button {
+            background-color: #00796b; /* Teal */
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #004d40; /* Darker teal */
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: #004d40; /* Deep teal */
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+            clear: both;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="./find_bikes.html">FIND YOUR BIKE</a></li>
+                <li><a href="#products">PRODUCTS</a></li>
+                <li><a href="#about">ABOUT US</a></li>
+                <li><a href="#stories">STORIES</a></li>
+                <li><a href="#support">SUPPORT</a></li>
+                <li><a href="phpfiles/index.php">DATABASE</a></li>
+                <li><a href="#plan">INTEGRATION PLAN</a></li>
+                <li><a href="#payment">PAYMENT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="find-bike">
+            
+        </section>
+
+        <section id="products">
+            <h2>Check out our latest products:</h2>
+            <button onclick="openProductsPage()">Products</button>
+        </section>
+
+        <section id="about">
+            <h2>Learn more about us:</h2>
+            <button onclick="openAboutPage()">About</button>
+        </section>
+
+        <section id="support">
+            <h2>Need assistance? Contact support:</h2>
+            <button onclick="openSupportPage()">Support</button>
+        </section>
+
+        <section id="stories">
+            <h2>Explore our latest stories:</h2>
+            <button onclick="openStoriesPage()">Read Stories</button>
+        </section>
+
+        <section id="plan">
+            <h2>Integration Plan:</h2>
+            <button onclick="openPlanPage()">View Plan</button>
+        </section>
+
+        <section id="payment">
+            <h2>Make a Payment:</h2>
+            <button onclick="openPaymentPage()">Payment</button>
+        </section>
+
+        <section>
+            <h1>Project Overview</h1>
+            <p>This is the project overview page.</p>
+            <button onclick="openProjectOverview()">Go to Project Overview Page</button>
+        </section>
+
+        <section>
+            <h1>Welcome to the Data Page</h1>
+            <button id="dataButton">Go to Data Page</button>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2024 PedalPulse. All rights reserved.
+    </footer>
+
+    <script>
+        function openProductsPage() {
+            window.location.href = "bikesproducts.html";
+        }
+
+        function openAboutPage() {
+            window.location.href = "about.html";
+        }
+
+        function openSupportPage() {
+            window.location.href = "support.html";
+        }
+
+        function openStoriesPage() {
+            window.location.href = "stories.html";
+        }
+
+        function openPlanPage() {
+            window.location.href = "plan.html";
+        }
+
+        function openPaymentPage() {
+            window.location.href = "elements.html";
+        }
+
+        function openProjectOverview() {
+            window.location.href = "projectoverview.html";
+        }
+
+        document.getElementById("dataButton").addEventListener("click", function() {
+            window.location.href = "phpfiles/index.php";
+        });
+    </script>
+</body>
+</html>

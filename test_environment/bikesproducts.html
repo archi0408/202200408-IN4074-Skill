@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PedalPulse - Database Integration Plan</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        header {
+            background-color: #1a1a1a;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav li {
+            margin: 0 10px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #ff6600;
+            color: #fff;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2em;
+        }
+
+        section {
+            background-color: #fff;
+            color: #333;
+            padding: 2em;
+            margin-bottom: 20px;
+            width: 100%;
+            max-width: 1200px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        h1, h2 {
+            font-weight: bold;
+            margin-top: 0;
+        }
+
+        h1 {
+            font-size: 32px;
+            color: #ff6600;
+        }
+
+        h2 {
+            font-size: 28px;
+            color: #333;
+        }
+
+        p {
+            color: #666;
+        }
+
+        .bike-link {
+            background-color: #f5f5f5;
+            border-radius: 10px;
+            padding: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease;
+        }
+
+        .bike-link:hover {
+            background-color: #eaeaea;
+        }
+
+        .bike-link img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .buy-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .buy-buttons a {
+            color: #fff;
+            background-color: #ff6600;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .buy-buttons a:hover {
+            background-color: #e65c00;
+        }
+
+        footer {
+            background-color: #1a1a1a;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#mountain-bike">Mountain Bikes</a></li>
+                <li><a href="#road-bike">Road Bikes</a></li>
+                <li><a href="#e-bike">E-Bikes</a></li>
+                <li><a href="#gravel-bike">Gravel Bikes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="products">
+            <h1>Our Products</h1>
+        </section>
+
+        <section id="mountain-bike">
+            <h2>Mountain Bike</h2>
+            <div class="bike-link">
+                <img src="./mountain bike.jpg" alt="Mountain Bike Image">
+                <p>Price: $1,200</p>
+                <div class="buy-buttons">
+                    <a href="#">Add to Cart</a>
+                    <a href="#">Buy Now</a>
+                    <a href="#">Add to Wishlist</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="road-bike">
+            <h2>Road Bike</h2>
+            <div class="bike-link">
+                <img src="./road bike.jpg" alt="Road Bike Image">
+                <p>Price: $1,000</p>
+                <div class="buy-buttons">
+                    <a href="#">Add to Cart</a>
+                    <a href="#">Buy Now</a>
+                    <a href="#">Add to Wishlist</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="e-bike">
+            <h2>E-Bike</h2>
+            <div class="bike-link">
+                <img src="./e.jpg" alt="E-Bike Image">
+                <p>Price: $1,500</p>
+                <div class="buy-buttons">
+                    <a href="#">Add to Cart</a>
+                    <a href="#">Buy Now</a>
+                    <a href="#">Add to Wishlist</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="gravel-bike">
+            <h2>Gravel Bike</h2>
+            <div class="bike-link">
+                <img src="./gravel bike.jpg" alt="Gravel Bike Image">
+                <p>Price: $1,300</p>
+                <div class="buy-buttons">
+                    <a href="#">Add to Cart</a>
+                    <a href="#">Buy Now</a>
+                    <a href="#">Add to Wishlist</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2024 PedalPulse. All rights reserved.
+    </footer>
+</body>
+</html>

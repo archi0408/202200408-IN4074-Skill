@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PedalPulse Bike Survey</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #ff0000;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #ff3333;
+        }
+    </style>
+</head>
+<body>
+
+<h1>PedalPulse Bike Survey</h1>
+
+<form action="submit.html" method="post">
+    <label for="name">Your Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Your Email:</label>
+    <input type="text" id="email" name="email" required>
+
+    <label for="bike-type">Preferred Bike Type:</label>
+    <select id="bike-type" name="bike-type">
+        <option value="mountain">Mountain Bike</option>
+        <option value="road">Road Bike</option>
+        <option value="e-bike">E-Bike</option>
+        <option value="gravel">Gravel Bike</option>
+    </select>
+
+    <label for="experience">Cycling Experience:</label>
+    <textarea id="experience" name="experience" rows="4" required></textarea>
+
+    <input type="submit" value="Submit Survey">
+</form>
+
+</body>
+</html>
